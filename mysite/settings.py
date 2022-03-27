@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("Django_key", "changeme")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', os.environ.get("IP_address"), os.environ.get("DNS")]
+ALLOWED_HOSTS = ['127.0.0.1', 'emotion-classifier-cnn-aec.herokuapp.com',os.environ.get("IP_address"), os.environ.get("DNS")]
 
 
 # Application definition
