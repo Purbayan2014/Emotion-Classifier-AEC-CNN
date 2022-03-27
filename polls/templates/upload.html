@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Uploading the file</title>
 <style>
- h1{text-align: center;}
+  h1{text-align: center;}
 {% comment %}
 body{
   background-color: #ee5522;
@@ -83,30 +83,239 @@ body.bg-image {
   background-size: 400px 300px;
   background-image: url(https://upload.wikimedia.org/wikipedia/en/8/80/Wikipedia-logo-v2.svg)
 }
+
+h1
+{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
+}
+
+.our-team-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+
+
+.our-team-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 90px;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+	
+}
+
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+}
+
+/our-team-main/
+
+
 </style>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-<h1> Emotion Classifier Using Neural Networks </h1>
+  <center>
+<h1> Emotion Classifier Using Neural Networks </h1><br><br>
 <form method="post" action="" enctype="multipart/form-data">
     {% csrf_token %}
    <div class="search">
       {{ form.as_p }}
    </div>
-    <br>
+    <br><br>
       <button type="submit" name="pred_button" class="searchButton"> Submit
         <i class="fa fa-search"></i>
      </button>
-   </form>
-    <h2>The Idea Behind It</h2>
-    <p>How this Implementation Works <a href="https://purbayan2014.github.io/Audio-Emotion-Recognition-Using-Neural-Network/" target="_blank" rel="noopener noreferrer">See Full Explanation Here!!!</a>.</p>
-    <footer>
-     <h2>Developing Team</h2>
-    <p>Purbayan Majumder<br><a href="https://purbayan2014.github.io/Purbayan/">Github Profile</a></p>
-    <p>Rubina Das</p>
-    <p>Aman Khan</p>
-        <p>Jaya Gupta</p>
-        <p>Ujjwal Kumar</p>
-        <p>Sadique Akhtar</p>
+</form>
+<div class="idea"><br><br><br>
+<h2>The Idea Behind It</h2>
+<p>How this Implementation Works <a href="https://purbayan2014.github.io/Audio-Emotion-Recognition-Using-Neural-Network/" target="_blank" rel="noopener noreferrer">See Full Explanation Here!!!</a>.</p> </center>
+</div>
+</center>
+<br><br><br><br><br><br><br><br>
+
+<div class="foot">
+<footer>
+     
+        <h1 class="text-center">Meet the Team</h1>
+
+	
+        <div class="container">
+        <div class="row">
+        
+        <!--team-1-->
+        <div class="col-lg-4">
+        <div class="our-team-main">
+        
+        <div class="team-front">
+          <img src='https://i.postimg.cc/BXzPrXxg/purbayan2.jpg'>
+        <h3>Purbayan Majumder</h3>
+        <p>Web Designer</p>
+        </div>
+        
+        <div class="team-back">
+          <span>
+          Hello There , I'm a Information Technology student at Asansol Engineering College. Looking forward to get placed in Google !
+          </span>
+          </div>
+        
+        </div>
+        </div>
+        <!--team-1-->
+        
+        <!--team-2-->
+        <div class="col-lg-4">
+        <div class="our-team-main">
+        
+        <div class="team-front">
+          <img src='https://i.postimg.cc/LYjVXjV2/pic.jpg'>  
+        <h3>Aman Khan</h3>
+        <p>Data Scientist</p>
+        </div>
+        <div class="team-back">
+          <span>
+          Hello There , I'm a Information Technology student at Asansol Engineering College. Looking forward to get placed in Google !
+          </span>
+          </div>
+        </div>
+        </div>
+        <!--team-2-->
+        
+        <!--team-3-->
+        <div class="col-lg-4">
+        <div class="our-team-main">
+        
+        <div class="team-front">
+          <a href='https://postimg.cc/JDdBRnfM' target='_blank'><img src='https://i.postimg.cc/JDdBRnfM/rubina.jpg' border='0' alt='rubina'/></a>
+        <h3>Rubina Das</h3>
+        <p>Competetive Coder</p>
+        </div>
+        <div class="team-back">
+          <span>
+          Hello There , I'm a Information Technology student at Asansol Engineering College. Looking forward to get placed in Google !
+          </span>
+          </div>
+        </div>
+        </div>
+        <!--team-3-->
+        
+        <!--team-4-->
+        <div class="col-lg-4">
+        <div class="our-team-main">
+        
+        <div class="team-front">
+          <a href='https://postimg.cc/64fJd2BN' target='_blank'><img src='https://i.postimg.cc/64fJd2BN/jaya.png' border='0' alt='jaya'/></a>
+        <h3>Jaya Gupta</h3>
+        <p>Full Stack Developer</p>
+        </div>
+        <div class="team-back">
+          <span>
+          Hello There , I'm a Information Technology student at Asansol Engineering College. Looking forward to get placed in Google !
+          </span>
+          </div>
+        
+        </div>
+        </div>
+        <!--team-4-->
+        
+        <!--team-5-->
+        <div class="col-lg-4">
+        <div class="our-team-main">
+        
+        <div class="team-front">
+          <a href='https://postimg.cc/DSMVdK3m' target='_blank'><img src='https://i.postimg.cc/DSMVdK3m/ujjwal2.jpg' border='0' alt='ujjwal2'/></a>
+        <h3>Ujjwal Kumar</h3>
+        <p>Senior Software Engineer</p>
+        </div>
+        
+        <div class="team-back">
+          <span>
+          Hello There , I'm a Information Technology student at Asansol Engineering College. Looking forward to get placed in Google !
+          </span>
+          </div>
+        </div>
+        </div>
+        <!--team-5-->
+        
+        <!--team-6-->
+        <div class="col-lg-4">
+        <div class="our-team-main">
+        
+        <div class="team-front">
+          <a href='https://postimg.cc/w1cy7FCW' target='_blank'><img src='https://i.postimg.cc/w1cy7FCW/sadique3.jpg' border='0' alt='sadique3'/></a>
+        <h3>Sadique Akhtar</h3>
+        <p>Hacker</p>
+        </div>
+        <div class="team-back">
+          <span>
+          Hello There , I'm a Information Technology student at Asansol Engineering College. Looking forward to get placed in Google !
+          </span>
+          </div>
+      
+        </div>
+        </div>
+        <!--team-6-->
+        
+        
+        
+        </div>
+        </div>
 </footer>
+</div>
 </body>
 </html>
