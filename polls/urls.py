@@ -4,6 +4,6 @@ from .views import handler, uploading
 
 urlpatterns = [
     #path('home/', handler, name='homepage'),
-    path('', index_func, name='homepage'),
+    path('', handler, name='homepage'),
     path('/upload', uploading, name='upload')
     ]
