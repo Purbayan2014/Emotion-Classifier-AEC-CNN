@@ -5,7 +5,7 @@
 Purbayan Majumder,Rubina Das,Aman Khan,Jaya Gupta,Ujjwal Kumar,Sadique Akhtar
 
 # Project Overview
-  As humans were are well trained in our experience reading recognition of various emotions which make us more sensible and understandable, but can be a difficult task for computers.AER is the task of recognizing the emotional aspects of speech irrespective of the semantic contents.In this project we have built a deep learning model that is trained on emotion detection or better yet emotion classification using audio data . We have an extract feature function which is using some other functions to extract information from the audio file . We had used the MLP Classifier which stands for Multi layer    Perceptron Classifier. We then have prepared our very own websited using Django and then hosted it on AWS . 
+  As humans were are well trained in our experience reading recognition of various emotions which make us more sensible and understandable, but can be a difficult task for computers.AER is the task of recognizing the emotional aspects of speech irrespective of the semantic contents.In this project we have built a deep learning model that is trained on emotion detection or better yet emotion classification using audio data . We have an extract feature function which is using some other functions to extract information from the audio file . We had used the MLP Classifier which stands for Multi layer    Perceptron Classifier. We then have prepared our very own websited using Django and then hosted it on AWS and heroku . 
   
 # Applications
 
